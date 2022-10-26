@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
+import { TodoComponent } from './todo/todo.component';
 
 const appRoutes:Routes=[
   {
@@ -15,13 +16,18 @@ const appRoutes:Routes=[
   },
   {
     path:"signup",component:SignupComponent
-  }
+  },
+  {
+    path:"todo",component:TodoComponent
+  },
+  
 ]
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
