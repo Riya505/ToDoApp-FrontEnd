@@ -14,4 +14,10 @@ export class ApiService {
   signup=(data:any)=>{
     return this.http.post("http://localhost:8080/userData",data)
   }
+  addTodo=(data:any)=>{
+    return this.http.post("http://localhost:8080/addTodo",data)
+  }
+  viewToDo=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewSingle",data)
+  }
 }

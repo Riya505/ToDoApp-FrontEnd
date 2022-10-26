@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">ToDo</label>
+                    <textarea placeholder="Write here..." name="todo" id="" cols="30" rows="10" class="form-control" [(ngModel)]="todo"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-secondary" (click)="readvalue()">Submit</button>
+                </div>
+                <div class="row g-3">
+                    <div *ngFor="let i of todoData" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">{{i.name}}</h5>
+                              <p class="card-text">{{i.todo}}</p>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
